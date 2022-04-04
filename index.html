@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title> Hyper Store </title>
+        <meta charset="utf-8">
+        <meta name="describtion" content="Hyper Store for electronics">
+        <meta name="keywords" content="Hyper, Market, Store, Electronics">
+        <meta name="author" content="EELU Tanta Group">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="img/fav.png" rel="icon">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a style="margin-left: 100px;" class="navbar-brand" href="#">Hyper</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active"><a id="shop" class="nav-link" onclick="toggle_active(this, 1)" href="#">Shop <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a id="about" class="nav-link" onclick="toggle_active(this)" href="#">About Us</a></li>
+                </ul>
+                <form class="form-inline my-2 my-sm-0">
+                    <input id="search_query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="search()">Search</button>
+                </form>
+                <ul class="navbar-nav mt-2 mt-sm-0" style="margin: auto 100px">
+                    <li class="nav-item">
+                        <img style="margin-top: 5px;" src="./img/basket.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        <a id="basket" style="display: inline-block;" onclick="toggle_active(this);list_basket();" class="nav-link" href="#">My Basket</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="shop"><div class="holder"></div></div>
+        <div class="about" style="display: none;">
+                 <article id="top" class="wrapper style1">
+                    <div class="about_us">
+                       <div>
+                          <div>
+                             <span class="image fit"><img src="img/About.jpg" alt="" /></span>
+                          </div>
+                          <div>
+                             <br>
+                             <header>
+                                <h1>Stay <strong>safe</strong> And buy whatever you want.</h1>
+                             </header>
+                             <p>Everything we do is designed to put the power directly in your hands <br> giving you the freedom to shop however, whenever and wherever you like.</p>
+                          </div>
+                       </div>
+                    </div>
+                 </article>
+                 <!-- Who are we-->
+                 <article class="wrapper style2">
+                    <div class="about_us">
+                       <header>
+                          <h2>Who are we</h2>
+                          <br>
+                          <p>We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.</p>
+                          <p>We strive to have a positive impact on customers, employees, small businesses, the economy, and communities. We are smart, passionate builders with different backgrounds and goals, who share a common desire to always be learning and inventing on behalf of our customers.</p>
+                          <br>
+                       </header>
+                       <footer>
+                          <a href="#" class="button">More info</a>
+                       </footer>
+                    </div>
+                 </article>
+                 <!-- Contact -->
+                 <article id="contact" class="wrapper style3">
+                    <div class="about_us ">
+                       <header>
+                          <h2>Tell us your suggestions and opinions</h2>
+                          <br>
+                       </header>
+                       <div>
+                          <div>
+                             <form method="post" action="#">
+                                <div>
+                                   <div>
+                                      <input type="text" name="name" id="name" placeholder="Name" />
+                                   </div>
+                                   <div>
+                                      <input type="text" name="email" id="email" placeholder="Email" />
+                                   </div>
+                                   <div>
+                                      <input type="text" name="subject" id="subject" placeholder="Subject" />
+                                   </div>
+                                   <div>
+                                      <textarea name="message" id="message" placeholder="Message"></textarea>
+                                   </div>
+                                   <div>
+                                      <ul class="actions">
+                                         <li><input type="submit" value="Send" /></li>
+                                         <li><input type="reset" value="Clear Form" class="alt" /></li>
+                                      </ul>
+                                   </div>
+                                </div>
+                             </form>
+                          </div>
+                          <div>
+                             <hr/>
+                             <br><br>
+                             <h3>Find us on ...</h3>
+                             <ul class="social">
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-instagram"><span class="label">instagram</span></a></li>
+                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+                                <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+                                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                             </ul>
+                             <br><br>
+                             <hr/>
+                          </div>
+                       </div>
+                       <footer>
+                          <ul id="copyright">
+                             <br><br>
+                             <li>&copy; Copyright 2020.</li>
+                             <li>EELU Students</li>
+                          </ul>
+                       </footer>
+                    </div>
+                 </article>
+            </div>
+        </div>
+        <div class="basket" style="display: none;"><div class="holder"></div></div>
+        <nav id="footer" class="navbar navbar-dark bg-dark"><span style="width: 100%;">&copy; Copyright 2020 - EELU Students</span></nav>
+    </body>
+    <div id="overlay" class="overlay" onclick="off()"></div>
+    <div id="next" class="toplay overlay right_arrow"><a href="#" class="btn btn-info btn-lg"> Next</a></div>
+    <div id="prev" class="toplay overlay left_arrow"><a href="#" class="btn btn-info btn-lg"> Prev</a></div>
+    <div class="toplay overlay"><a id="check" href="#" class="btn btn-info btn-lg"> Add To Basket</a></div>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</html>

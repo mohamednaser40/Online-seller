@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("fontawesome-all.min.css");
+.filter {
+	margin: 25px;
+}
+
+.holder {
+	width: 80% !important;
+	margin: 50px auto;
+}
+
+nav {
+	color: #fff
+}
+
+.center {
+	text-align: center;
+	clear: both;
+}
+
+.shop,
+.basket,
+.about {
+	min-height: 500px;
+	overflow: hidden;
+}
+
+.card {
+	max-width: 30% !important;
+	float: left;
+	margin: 1.5%;
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, .125) !important;
+	height: 400px;
+	cursor: pointer;
+}
+
+.card img {
+	max-width: 80%;
+	height: 250px;
+	display: inline-block;
+	margin: 15px auto;
+}
+
+#footer {
+	margin-top: 75px;
+	text-align:center;
+	padding: 20px;
+}
+
+.overlay {
+	display: none
+}
+
+.toplay {
+	z-index: 100;
+	color: #fff;
+}
+
+#overlay {
+	position: fixed;
+	/* Sit on top of the page content */
+	width: 100%;
+	/* Full width (cover the whole page) */
+	height: 100%;
+	/* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Black background with opacity */
+	z-index: 2;
+	/* Specify a stack order in case you're using a different order for other elements */
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 50px;
+	color: white;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.right_arrow {
+	position: fixed;
+	top: 45%;
+	left: 90%;
+}
+
+.left_arrow {
+	position: fixed;
+	top: 45%;
+	left: 10%;
+}
+
+#check {
+	width: 250px;
+	position: fixed;
+	bottom: 50px;
+	left: calc(50% - 125px);
+	z-index: 10;
+}
+
+
+/******* About US *******/
+
+
+/* Articles */
+
+#top .image {
+	border-radius: 100%;
+	width: 20em;
+	height: 20em;
+	margin: 0;
+}
+
+#top .image img {
+	border-radius: 100%;
+}
+
+#top h1 {
+	margin-top: 0.35em;
+}
+
+#top p {
+	font-size: 1.5em;
+	line-height: 1.75em;
+}
+
+#top p a {
+	color: inherit;
+}
+
+#contact footer {
+	font-size: 0.9em;
+}
+
+
+/* Actions */
+
+ul.actions {
+	margin: 0;
+}
+
+ul.actions li {
+	display: block;
+	margin: 15px 0 0 0;
+}
+
+ul.actions li:first-child {
+	margin-top: 0;
+}
+
+
+/* Wrappers */
+
+.wrapper {
+	background-image: url("../img/bg.png");
+	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 8em 0 5em 0;
+	text-align: center;
+}
+
+.wrapper.style1 {
+	background-image: none;
+	background-color: #fff;
+}
+
+.wrapper.style2 {
+	background-color: #f4f4f4;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.wrapper.style3 {
+	background-color: #303030;
+	color: #999;
+	text-shadow: -1px -1px 0px #181818;
+}
+
+.wrapper.style3 h1,
+.wrapper.style3 h2,
+.wrapper.style3 h3,
+.wrapper.style3 h4,
+.wrapper.style3 h5,
+.wrapper.style3 h6 {
+	color: #fff;
+}
+
+.wrapper.style3 form input[type=text],
+.wrapper.style3 form input[type=password],
+.wrapper.style3 form select,
+.wrapper.style3 form textarea {
+	border: none;
+	background: #282828;
+}
+
+.wrapper.style3 form input[type=text]:focus,
+.wrapper.style3 form input[type=password]:focus,
+.wrapper.style3 form select:focus,
+.wrapper.style3 form textarea:focus {
+	background: #252525;
+}
+
+
+/* about */
+
+.about_us {
+	margin: 0 auto;
+	max-width: 70%;
+	width: 1200px;
+}
+
+
+/* Form */
+
+form label {
+	color: #3e3e3e;
+	font-weight: 700;
+	display: block;
+	margin: 0 0 0.5em 0;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form select,
+form textarea {
+	display: block;
+	border: 0;
+	padding: 0.75em;
+	font-size: 1em;
+	border-radius: 8px;
+	border: solid 1px #ddd;
+	background: #fff;
+	color: #bbb;
+	box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+	width: 70%;
+	margin: 0 0 3% 15%;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus,
+form select:focus,
+form textarea:focus {
+	background: #fafafa;
+	box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+}
+
+form textarea {
+	height: 15em;
+}
+
+
+/* Social */
+
+ul.social {
+	cursor: default;
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.social li {
+	position: relative;
+	display: inline-block;
+	margin: 0.25em;
+	top: 0;
+	padding-left: 0;
+}
+
+ul.social li a {
+	-moz-transition: top .2s ease-in-out;
+	-webkit-transition: top .2s ease-in-out;
+	-ms-transition: top .2s ease-in-out;
+	transition: top .2s ease-in-out;
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 6px;
+	top: 0;
+	position: relative;
+}
+
+ul.social li a:before {
+	background-image: url("../img/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	-moz-transition: background-color .2s ease-in-out;
+	-webkit-transition: background-color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+	background-color: #444;
+	border-radius: 6px;
+	box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+	color: #2E2E2E !important;
+	display: block;
+	font-size: 26px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	outline: 0;
+	overflow: hidden;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+	width: 48px;
+}
+
+ul.social li a.fa-twitter {
+	background-color: #2DAAE4;
+}
+
+ul.social li a.fa-facebook-f {
+	background-color: #3C5A98;
+}
+
+ul.social li a.fa-linkedin-in {
+	background-color: #006599;
+}
+
+ul.social li a.fa-tumblr {
+	background-color: #51718A;
+}
+
+ul.social li a.fa-google-plus {
+	background-color: #DA2713;
+}
+
+ul.social li a.fa-github {
+	background-color: #FAFAFA;
+}
+
+ul.social li a.fa-instagram {
+	background-color: #E0D7C8;
+}
+
+ul.social li a:hover {
+	top: -5px;
+}
+
+ul.social li a:hover:before {
+	background-color: transparent;
+}
+
+
+/* Icons */
+
+.icon {
+	text-decoration: none;
+	text-decoration: none;
+}
+
+.icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+}
+
+.icon:before {
+	font-size: 1.25em;
+}
+
+.icon>.label {
+	display: none;
+}
+
+.icon.solid:before {
+	font-weight: 900;
+}
+
+.icon.brands:before {
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.icon.featured {
+	color: #EA8A95;
+	display: block;
+	margin: 0 0 1.5em 0;
+	cursor: default;
+}
+
+.icon.featured:before {
+	font-size: 6em;
+}
+
+
+/* Copyright */
+
+#copyright {
+	color: #666;
+	font-size: 1em;
+	line-height: 1em;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#copyright li {
+	display: inline-block;
+	border-left: solid 1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+	padding: 0 0 0 1em;
+	margin: 0 0 0 1em;
+}
+
+#copyright li:first-child {
+	border: 0;
+	box-shadow: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+	background-image: url("../img/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: url("../img/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	-webkit-appearance: none;
+	position: relative;
+	display: inline-block;
+	color: #fff !important;
+	text-decoration: none;
+	font-weight: 700;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 8px;
+	text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+	background-color: #43B3E0;
+	padding: 1em 2.35em 1em 2.35em;
+	font-size: 1.1em;
+	max-width: 24em;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+	background-color: #43bff0;
+	color: #fff !important;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active,
+.button:active {
+	background-color: #3BA8D3;
+	top: 1px;
+}
